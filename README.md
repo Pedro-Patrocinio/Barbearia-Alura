@@ -1,2 +1,2 @@
 # Barbearia-Alura
-Curso de JS e node.
+Estudos de JS e node.
