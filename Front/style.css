@@ -1,0 +1,253 @@
+body{
+    font-family: 'Baloo Da 2', cursive;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+/* ----------------------------------------
+-----------------Cabeçalho-----------------
+---------------------------------------- */
+header{
+    background: #cccccc;
+    vertical-align: center;
+    margin: 0;
+    padding: 30px 20px;
+}
+header h1{
+    display: inline-block;
+    margin: 0 0 0 100px;
+}
+.menu ul{
+    float: right;
+    clear: both;
+    margin: 120px 100px 0 0;
+}
+.menu li{
+    display: inline;
+    text-align: right;
+    margin-left: 15px;
+}
+.menu a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: dodgerblue;
+    text-decoration: underline;
+}
+/* ----------------------------------------
+------------------Index--------------------
+---------------------------------------- */
+.gradiente{
+    background: linear-gradient(white 35%, darkorange, darkorange);
+}
+.banner{
+    background: #cccccc;
+    width:100%;
+}
+.principal{
+    padding: 3m 0;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    clear: left;
+    font-family: 'Lobster', cursive;
+}
+.principal p{
+    text-align: center;
+    margin-bottom: 1em;
+}
+.missao{
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #000000;
+}
+em strong{
+    color: red;
+}
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.mapa{
+    padding: 3em 0;
+}
+.mapa p{
+    margin: 2em;
+    text-align: center;
+}
+.beneficios{
+    padding: 20px;
+}
+.beneficios ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin: 20px 0 20px 20px;
+}
+.itens{
+    font-size: 18px;
+    font-style: italic;
+    padding-bottom: 25px;
+}
+.itens:first-child{
+    font-weight: bold;
+}
+.imagembeneficios{
+    margin-left: 22%;
+    width: 50%;
+    border-radius: 50px;
+    opacity: 0.85;
+    box-shadow: 10px 10px 10px black;
+    transition: 300ms;
+}
+.imagembeneficios:hover{
+    margin-left: 0%;
+    transform: scale(1.5);
+    border-radius: 10px;
+    opacity: 1;
+    box-shadow: 0 0 0 600px rgba(0,0,0, 0.8);
+}
+.video{
+    width: 560px;
+    height: 315px;
+    margin: 2em auto;
+}
+/* ----------------------------------------
+-----------------Produtos------------------
+---------------------------------------- */
+.produtos{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: 500px;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.produtos img{
+    width:100%;
+}
+.produtos li:hover{
+    border-color: dodgerblue;
+}
+.produtos li:hover h2{
+    font-size: 34px;
+    color: dodgerblue;
+}
+.produtos li:active{
+    border-color: forestgreen;
+}
+.produtos li:active h2{
+    color: forestgreen;
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-descricao{
+    font-size: 18px;
+}
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    vertical-align: text-bottom;
+    margin-bottom: 10px;
+}
+/* ----------------------------------------
+------------------Contato------------------
+---------------------------------------- */
+form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.input-padrao{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.35s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2) rotate(1080deg);
+}
+table{
+    margin: 20px 0 40px;
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid#000000;
+    padding: 8px 15px;
+}
+/* ----------------------------------------
+------------------Rodapé-------------------
+---------------------------------------- */
+footer{
+    text-align: center;
+    background: url(arquivos/bg.jpg);
+    padding: 40px 0;
+}
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin-top: 15px;
+}
+/* ----------------------------------------
+--------------Responsividade---------------
+---------------------------------------- */
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-beneficios, .mapa, .video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    /* .beneficios li, .beneficios ul, .itens,*/ .menu ul, .beneficios, .imagembeneficios{
+        width: 100%;
+        margin: auto;
+        padding: auto;
+    }
+    .menu ul{
+        text-align: center;    
+    }
+}
