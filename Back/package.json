@@ -17,12 +17,16 @@
     "body-parser": "^1.19.0",
     "consign": "^0.1.6",
     "express": "^4.17.1",
-    "moment": "^2.25.3",
+    "moment": "^2.29.1",
     "mysql": "^2.18.1",
+    "node": "^15.8.0",
     "save-dev": "0.0.1-security"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
-  }
+    "nodemon": "^2.0.7"
+  },
+  "bugs": {
+    "url": "https://github.com/Pedro-Patrocinio/Barbearia-Alura/issues"
+  },
+  "homepage": "https://github.com/Pedro-Patrocinio/Barbearia-Alura#readme"
 }
-
