@@ -1,70 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Barbearia Alura</title>
-        <link rel="stylesheet" href="reset2.css">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
-    </head>
 
-    <body class="gradiente">
-        <header>
-            <div class="menu">
-                <h1><img src="arquivos/logo.png" alt="Logo da Barbearia Alura"></h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Cleitão</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../assets/bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body class="gradiente">
+    <header>
+        <div class="container-fluid menu">
+            <div class="d-flex row">
+                <div class="col-sm-auto d-flex justify-content-start flex-grow-1">
+                    <h1><img src="../assets/logo.png" alt="Logo da Barbearia Cleitão" class="logo"></h1>
+                </div>
+                <div class="col-sm-auto d-flex align-items-center justify-content-end">
+                    <a href="index.html">Home</a></li>
+                </div>
+                <div class="col-sm-auto d-flex align-items-center justify-content-end">
+                    <a href="produtos.html">Produtos</a></li>
+                </div>
+                <div class="col-sm-auto d-flex align-items-center justify-content-end">
+                    <a href="contato.html">Contato</a></li>
+                </div>
             </div>
-        </header>
-        
-        <img class="banner" src="arquivos/banner.jpg">
-        
-        <main>
-            <section class="principal">
-                <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
-        
-                <img class="utensilios" src="arquivos/utensilios.jpg" alt="Utensilios de um barbeiro">
+        </div>
+    </header>
 
-                <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
-        
-                <p class="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
-        
-                <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-            </section>
-            
-            <section class="mapa">
-                <h3 class="titulo-principal">Nosso Estabelecimento</h3>
-                <p>Nosso estabelecimento está localizado no coração da cidade.</p>
+    <img src="../assets/banner.jpg" class="img-fluid d-flex w-100">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.4538014381196!2d-44.04350098547017!3d-19.94740894400125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6958d56f3de9f%3A0x6cf168069dce2e55!2sR.%20Jo%C3%A3o%20Gomes%20Cardoso%20-%20Eldorado%2C%20Contagem%20-%20MG%2C%2032315-030!5e0!3m2!1spt-BR!2sbr!4v1585351475781!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </section>
-            
-            <section class="beneficios">
-                <h3 class="titulo-principal">Benefícios</h3>
-                
-                <ul>
-                    <li class="itens">Atendimento aos clientes</li>
-                    <LI class="itens">Espaço diferenciado</LI>
-                    <li class="itens">Localização</li>
-                    <li class="itens">Profissionais Qualificados</li>
-                    <li class="itens">Pontualidade</li>
-                    <li class="itens">Limpeza</li>
-                </ul>
-                
-                <img class="imagembeneficios" src="arquivos/beneficios.jpg">
-                
-                <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZGAb27hnO78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            </section>
-        </main>
+    <main>
+        <section class="principal container-fluid">
 
-        <footer>
-            <img src="arquivos/logo-branco.png" alt="Logo da Barbearia Alura">
-            <p class="copyright">&copy; Copyright Barbearia Alura - 2020</p>
-        </footer>
-    </body>
+            <div class="row">
+                <div class="col-3 d-flex">
+                    <div class="d-flex flex-column w-100">
+                        <img class="utensilios flex-row rounded" src="../assets/utensilios.jpg" alt="Utensilios de um barbeiro">
+                    </div>
+                </div>
+
+                <div class="texto-principal col-9 d-flex">
+                    <div class="d-flex flex-column w-100">
+                        <h2 class="titulo-principal">Sobre a Barbearia Cleitão</h2>
+
+                        <p>Localizada no coração da cidade a <strong>Barbearia Cleitão</strong> traz para o
+                            mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Cleitão
+                            já é
+                            destaque na cidade e conquista novos clientes a cada dia.</p>
+
+                        <p class="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos
+                                    clientes"</strong>.</em></p>
+
+                        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O
+                            atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos
+                            nossos
+                            clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mapa container-fluid">
+            <h3 class="titulo-principal">Nosso Estabelecimento</h3>
+            <p>Nosso estabelecimento está localizado no coração da cidade.</p>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.0410614370553!2d-43.94668763327029!3d-19.92267442709652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa696886860ff45%3A0xd047e08651ecf94f!2sRAV%20Plan%20Consultoria!5e0!3m2!1spt-BR!2sbr!4v1615072784827!5m2!1spt-BR!2sbr"
+                width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </section>
+
+        <section class="beneficios container-fluid">
+            <h3 class="titulo-principal">Benefícios</h3>
+
+            <ul>
+                <LI class="itens">Espaço diferenciado</LI>
+                <li class="itens">Localização</li>
+                <li class="itens">Profissionais Qualificados</li>
+                <li class="itens">Pontualidade</li>
+                <li class="itens">Limpeza</li>
+            </ul>
+
+            <img class="imagembeneficios" src="../assets/beneficios.jpg">
+
+            <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZGAb27hnO78"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="../assets/logo-branco.png" alt="Logo da Barbearia Cleitão">
+        <p class="copyright">&copy; Copyright Barbearia Cleitão - 2020</p>
+    </footer>
+</body>
+
 </html>

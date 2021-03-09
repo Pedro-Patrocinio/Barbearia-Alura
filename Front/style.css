@@ -1,3 +1,6 @@
+/* ----------------------------------------
+-------------------Geral-------------------
+---------------------------------------- */
 body{
     font-family: 'Baloo Da 2', cursive;
 }
@@ -9,35 +12,34 @@ main{
 -----------------Cabeçalho-----------------
 ---------------------------------------- */
 header{
-    background: #cccccc;
-    vertical-align: center;
-    margin: 0;
-    padding: 30px 20px;
-}
-header h1{
-    display: inline-block;
-    margin: 0 0 0 100px;
-}
-.menu ul{
-    float: right;
-    clear: both;
-    margin: 120px 100px 0 0;
-}
-.menu li{
-    display: inline;
-    text-align: right;
-    margin-left: 15px;
+    background: lightgrey;
+    padding: 5px 70px;
+    border-style: none none solid none;
 }
 .menu a{
+    vertical-align: middle;
+    padding: 5px 10px;
     text-transform: uppercase;
     color: #000000;
+    background-color: grey;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+    border: 2px solid rgb(45, 45, 45);
+    border-radius: 7px;
 }
 .menu a:hover{
-    color: dodgerblue;
+    color: rgb(100, 70, 45);
     text-decoration: underline;
+    border: 4px solid rgb(100, 70, 45);
+}
+.logo{
+    height: "100px";
+    transition: 0.50s all;
+    cursor: pointer;
+}
+.logo:hover{
+    transform: scale(1.2) rotate(720deg);
 }
 /* ----------------------------------------
 ------------------Index--------------------
@@ -45,19 +47,18 @@ header h1{
 .gradiente{
     background: linear-gradient(white 35%, darkorange, darkorange);
 }
-.banner{
-    background: #cccccc;
-    width:100%;
-}
-.principal{
-    padding: 3m 0;
-}
 .titulo-principal{
     text-align: center;
     font-size: 2em;
     margin-bottom: 1em;
     clear: left;
     font-family: 'Lobster', cursive;
+}
+.principal{
+    padding: 20px 0;
+}
+.texto-principal{
+    padding: 0 50px;
 }
 .principal p{
     text-align: center;
@@ -69,11 +70,6 @@ header h1{
 }
 em strong{
     color: red;
-}
-.utensilios{
-    width: 120px;
-    float: left;
-    margin: 0 20px 20px 0;
 }
 .mapa{
     padding: 3em 0;
@@ -87,77 +83,55 @@ em strong{
 }
 .beneficios ul{
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 20%;
     margin: 20px 0 20px 20px;
 }
 .itens{
-    font-size: 18px;
+    font-size: 22px;
     font-style: italic;
     padding-bottom: 25px;
-}
-.itens:first-child{
-    font-weight: bold;
 }
 .imagembeneficios{
     margin-left: 22%;
     width: 50%;
-    border-radius: 50px;
+    border-radius: 35px;
     opacity: 0.85;
     box-shadow: 10px 10px 10px black;
-    transition: 300ms;
+    transition: 150ms;
 }
 .imagembeneficios:hover{
     margin-left: 0%;
     transform: scale(1.5);
     border-radius: 10px;
     opacity: 1;
-    box-shadow: 0 0 0 600px rgba(0,0,0, 0.8);
+    box-shadow: 0 0 0 1500px rgba(0,0,0, 0.8);
 }
 .video{
     width: 560px;
     height: 315px;
     margin: 2em auto;
+    padding-top: 50px;
 }
 /* ----------------------------------------
 -----------------Produtos------------------
 ---------------------------------------- */
 .produtos{
-    width: 100%;
-    margin: 0 auto;
     padding: 50px 0;
 }
-.produtos li{
-    display: inline-block;
+.opcao{
     text-align: center;
-    width: 30%;
-    height: 500px;
-    vertical-align: top;
-    margin: 0 1.5%;
+    margin: 0 auto;
     padding: 30px 20px;
-    box-sizing: border-box;
     border: 2px solid black;
     border-radius: 20px;
 }
-.produtos img{
-    width:100%;
-}
-.produtos li:hover{
-    border-color: dodgerblue;
-}
-.produtos li:hover h2{
-    font-size: 34px;
-    color: dodgerblue;
-}
-.produtos li:active{
-    border-color: forestgreen;
-}
-.produtos li:active h2{
-    color: forestgreen;
-}
-.produtos h2{
+.produto-titulo{
     font-size: 30px;
     font-weight: bold;
+}
+.produtos img{
+    width:50%;
 }
 .produto-descricao{
     font-size: 18px;
@@ -165,8 +139,19 @@ em strong{
 .produto-preco{
     font-size: 22px;
     font-weight: bold;
-    vertical-align: text-bottom;
-    margin-bottom: 10px;
+}
+.opcao:hover{
+    border-color: dodgerblue;
+}
+.opcao:hover h2{
+    font-size: 34px;
+    color: dodgerblue;
+}
+.opcao:active{
+    border-color: forestgreen;
+}
+.opcao:active h2{
+    color: forestgreen;
 }
 /* ----------------------------------------
 ------------------Contato------------------
@@ -202,7 +187,7 @@ form label, form legend{
 }
 .enviar:hover{
     background: darkorange;
-    transform: scale(1.2) rotate(1080deg);
+    transform: scale(1.03);
 }
 table{
     margin: 20px 0 40px;
@@ -221,7 +206,7 @@ td, th{
 ---------------------------------------- */
 footer{
     text-align: center;
-    background: url(arquivos/bg.jpg);
+    background: url(../assets/bg.jpg);
     padding: 40px 0;
 }
 .copyright{
